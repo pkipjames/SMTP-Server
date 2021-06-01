@@ -1,7 +1,7 @@
 import sys
 from socket import *
 
-serverPort = int(sys.argv[1])
+serverPort = 25
 serverSocket = socket(AF_INET, SOCK_STREAM)
 serverSocket.bind(('',serverPort))
 serverSocket.listen(1)
